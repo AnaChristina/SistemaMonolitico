@@ -1,0 +1,21 @@
+<%# A linha abaixo carrega no template o conteúdo total do arquivo header.ejs%>
+<%-include('base_header') -%>
+<body>
+    <%- include('pesquisa') -%>
+    <div class="lista">
+        <ul>
+        <% for(var i=0; i< lista_projetos.length; ++i) { %>        
+            <li> 
+                <span class="descritor descritor-titulo">Titulo:</span> <%=lista_projetos[i].titulo %><br/>
+                <span class="descritor descritor-autor">Autor:</span> <%=lista_projetos[i].autor %> <br/>
+                <span class="descritor descritor-categoria">Categoria:</span> <%=lista_projetos[i].categoria %> <br/>
+                <span class="descritor descritor-data">Data da Publicação:</span> <%=lista_projetos[i].data %>            
+            </li> 
+
+        <% } %>
+        </ul>
+    </div>
+    <!-- <script> var perm =  window.sessionStorage.getItem("perm")</script> -->
+</body>
+<%# A linha abaixo carrega no template o conteúdo total do arquivo footer.ejs %>
+<%- include('base_footer') -%>

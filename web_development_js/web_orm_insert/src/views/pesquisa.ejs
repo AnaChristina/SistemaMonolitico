@@ -1,0 +1,36 @@
+<%- include('base_header') -%>
+import { searchBooks } from "./models/services";
+
+<body>
+    <div class="pesquisa">
+        <header>
+            <nav>
+                <form action="pesquisar" method="get">
+                    <input type="text" name="termoPesquisa" placeholder="Digite o nome, autor ou categoria do livro">
+                    <input class="btn" type="submit">Pesquisar:  teste</input>
+                  </form>
+            </nav>
+        </header>
+    </div>
+
+    <div class="charme">
+        <hr>
+    </div>
+    <!-- <%- include('barra_menu') -%>
+
+    <% if (livrosEncontrados.length > 0) { %>
+        <h2>Livros Encontrados:</h2>
+        <% for (var i = 0; i <livrosEncontrados.length; ++i) { %>
+            <li>
+                <span class="descritor">Título  oiii:</span> <%= livrosEncontrados[i].titulo %> <br />
+                <span class="descritor">Autor:</span> <%= livrosEncontrados[i].autor %> <br />
+                <span class="descritor">Categoria:</span> <%= livrosEncontrados[i].categoria %> <br />
+                <span class="descritor">Data:</span> <%= livrosEncontrados[i].data %> <br />
+                <span class="descritor">Id:</span> <%= livrosEncontrados[i].id %> <br />
+            </li>
+        <% } %>
+    <% } else { %>
+        <p>Nenhum livro encontrado.</p>
+    <% } %> -->
+
+<%- include('base_footer') -%>

@@ -1,0 +1,13 @@
+<%-include('base_header') -%>
+<ul>
+  <% for (var i = 0; i < listar_projetos.length; ++i) { %>
+    <li>
+      <span class="descritor">Titulo:</span> <%=listar_projetos[i].titulo %> <br />
+      <span class="descritor">Autor:</span> <%=listar_projetos[i].autor %> <br />
+      <span class="descritor">Categoria:</span> <%=listar_projetos[i].categoria %> <br />
+      <span class="descritor">Data:</span> <%=listar_projetos[i].data %> <br />
+      <span class="descritor">Id:</span> <%=listar_projetos[i].id %> <br />
+    </li>
+  <% } %>
+</ul>
+<%- include('base_footer') -%>

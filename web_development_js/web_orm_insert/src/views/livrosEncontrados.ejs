@@ -1,0 +1,17 @@
+<%-include('base_header') -%>
+<%- include('barra_menu') -%>
+
+    <% if (livrosEncontrados.length > 0) { %>
+        <h2>Livros Encontrados:</h2>
+        <% for (var i = 0; i < livrosEncontrados.length; ++i) { %>
+            <li>
+                <span class="descritor">Título oii:</span> <%= livrosEncontrados[i].titulo %> <br />
+                <span class="descritor">Autor:</span> <%= livrosEncontrados[i].autor %> <br />
+                <span class="descritor">Categoria:</span> <%= livrosEncontrados[i].categoria %> <br />
+                <span class="descritor">Data:</span> <%= livrosEncontrados[i].data %> <br />
+                <span class="descritor">Id:</span> <%= livrosEncontrados[i].id %> <br />
+            </li>
+        <% } %>
+    <% } else { %>
+        <p>Nenhum livro encontrado.</p>
+    <% } %>

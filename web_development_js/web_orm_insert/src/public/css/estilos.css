@@ -1,0 +1,96 @@
+/* Exemplo de CSS servido estaticamente pelo Express.
+Autor: Fabrício G. M. de Carvalho
+*/
+body{
+    background-color: #EBE6E4;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+}
+
+li{
+    display: inline-block; 
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 10px;
+    width: 150pt;
+    height: 150pt;
+    /* background-color: #EBE6E4; */
+    border-radius: 10%;
+    text-align:center;
+    /* border-color: #141A26; */
+    border-style: solid;
+    border-color: #B47762;
+    background-color: white;
+}
+
+.descritor{
+    font-weight: bold;
+    font-size: 20px;
+    color: #141A26;
+}
+
+.pesquisa-input{
+    margin-left: 10px;
+    width: 50%;
+    height: 35px;
+    font-size: 15px;
+    
+}
+.pesquisa nav{
+    background-color: #EBE6E4;
+    height: 80px;
+}
+
+.barra-menu{
+    position:relative;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+.btn{
+    height: 35px;
+    font-weight: bolder;
+    background-color: #B47762;
+    color:white;
+    margin-right: 10px;
+    border-style: none;
+}
+
+.casdatroLivro +{
+
+}
+.casdatroLivro span{
+    font-weight: bolder;
+    line-height: 1.5;
+    
+}
+
+.charme{
+    background-color: white;
+    line-height: 20%;
+    width: 100%;
+}
+.charme hr{
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.btn-novo{
+    width: 100px;
+    height: 35px;
+    font-weight: bolder;
+    background-color: #B47762;
+    color:white;
+    margin-right: 10px;
+    border-style: none;
+}

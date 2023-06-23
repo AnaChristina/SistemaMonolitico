@@ -1,0 +1,26 @@
+<%-include('base_header') -%>
+<div class="app.get('/admin', admin);">
+    <form action="cadastroLivro" method="post">
+        <span>Titulo: </span>
+        <input type="text" name="titulo"> <br>
+        
+        <span>Autor: </span>
+        <input type="text" name="autor"> <br>
+        
+        <span class="">Data de Publicação: </span>
+        <input type="date" name="data"> <br>        
+
+        <span>Categorias</a></span>
+            <select name="categoria">
+                <option value="ficção">Ficção</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Informatica">Informática</option>
+            </select>
+        <label>Não achou a categoria correta? <a href="/cadastrarCategoria">Cadastre aqui</a></label>
+
+        <input class="btn" type="submit" value="cadastrar">
+    </form>
+
+    <a class="" href="/admin"><button class="btn">Voltar</button></a>
+</div>
+<%- include('base_footer') -%>
